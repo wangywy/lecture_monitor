@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Lecture Monitor",
+  "description": "监控北化研究生学术报告更新.",
+  "version": "0.1.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  
+  "background": {
+    "persistent": false,
+    "scripts": ["scripts/eventPage.js",
+                "scripts/jquery-2.0.3.min.js"
+               ]
+  },
+  
+  "permissions": [
+    "http://graduate.buct.edu.cn:8080/",
+    "storage",
+    "notifications",
+    "alarms",
+    "tabs"
+  ]
+}
